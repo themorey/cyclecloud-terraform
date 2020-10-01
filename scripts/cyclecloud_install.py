@@ -371,7 +371,7 @@ def main():
     cyclecloud_account_setup(vm_metadata, args.useManagedIdentity, args.tenantId, args.applicationId,
                              args.applicationSecret, args.username, args.azureSovereignCloud, args.acceptTerms, 
                              args.password, args.storageAccount)
-    #letsEncrypt(args.hostname, vm_metadata["compute"]["location"])
+    letsEncrypt(args.hostname, vm_metadata["compute"]["location"])
 
     create_user_credential(args.username)
 
